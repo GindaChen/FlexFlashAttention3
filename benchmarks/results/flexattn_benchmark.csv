@@ -1,0 +1,325 @@
+Operation,FW Time (ms),FW FLOPS (TF/s),BW Time (ms),BW FLOPS (TF/s),B,H,S,D,Name
+causal FA2,0.0450,190.75,inf,0.00,2,32,1024,64,causal_mask
+F.sdpa + mask,0.1906,50.69,inf,0.00,2,32,1024,64,causal_mask
+flexattention,0.0569,169.86,inf,0.00,2,32,1024,64,causal_mask
+causal FA2,0.1204,285.34,inf,0.00,2,32,2048,64,causal_mask
+F.sdpa + mask,0.6019,60.65,inf,0.00,2,32,2048,64,causal_mask
+flexattention,0.1410,258.92,inf,0.00,2,32,2048,64,causal_mask
+causal FA2,0.3851,356.85,inf,0.00,2,32,4096,64,causal_mask
+F.sdpa + mask,2.1188,66.89,inf,0.00,2,32,4096,64,causal_mask
+flexattention,0.4416,320.96,inf,0.00,2,32,4096,64,causal_mask
+causal FA2,1.3995,392.81,inf,0.00,2,32,8192,64,causal_mask
+F.sdpa + mask,8.0732,69.16,inf,0.00,2,32,8192,64,causal_mask
+flexattention,1.5646,356.86,inf,0.00,2,32,8192,64,causal_mask
+causal FA2,5.4132,406.23,inf,0.00,2,32,16384,64,causal_mask
+F.sdpa + mask,31.1449,71.16,inf,0.00,2,32,16384,64,causal_mask
+flexattention,5.9146,374.70,inf,0.00,2,32,16384,64,causal_mask
+causal FA2,21.0365,418.13,inf,0.00,2,32,32768,64,causal_mask
+F.sdpa + mask,123.0120,71.79,inf,0.00,2,32,32768,64,causal_mask
+flexattention,22.7843,387.57,inf,0.00,2,32,32768,64,causal_mask
+causal FA2,0.0394,217.81,inf,0.00,2,16,1024,128,causal_mask
+F.sdpa + mask,0.1275,75.82,inf,0.00,2,16,1024,128,causal_mask
+flexattention,0.0544,177.73,inf,0.00,2,16,1024,128,causal_mask
+causal FA2,0.0964,356.25,inf,0.00,2,16,2048,128,causal_mask
+F.sdpa + mask,0.3501,104.26,inf,0.00,2,16,2048,128,causal_mask
+flexattention,0.1264,288.77,inf,0.00,2,16,2048,128,causal_mask
+causal FA2,0.2890,475.62,inf,0.00,2,16,4096,128,causal_mask
+F.sdpa + mask,1.2000,118.12,inf,0.00,2,16,4096,128,causal_mask
+flexattention,0.3745,378.48,inf,0.00,2,16,4096,128,causal_mask
+causal FA2,1.0616,517.83,inf,0.00,2,16,8192,128,causal_mask
+F.sdpa + mask,4.5456,122.83,inf,0.00,2,16,8192,128,causal_mask
+flexattention,1.3016,428.97,inf,0.00,2,16,8192,128,causal_mask
+causal FA2,4.0226,546.67,inf,0.00,2,16,16384,128,causal_mask
+F.sdpa + mask,17.7104,125.14,inf,0.00,2,16,16384,128,causal_mask
+flexattention,4.8987,452.40,inf,0.00,2,16,16384,128,causal_mask
+causal FA2,15.7891,557.10,inf,0.00,2,16,32768,128,causal_mask
+F.sdpa + mask,69.6142,126.85,inf,0.00,2,16,32768,128,causal_mask
+flexattention,18.8841,467.61,inf,0.00,2,16,32768,128,causal_mask
+causal FA2,0.0683,125.70,inf,0.00,2,8,1024,256,causal_mask
+F.sdpa + mask,0.1492,64.79,inf,0.00,2,8,1024,256,causal_mask
+flexattention,0.0913,105.88,inf,0.00,2,8,1024,256,causal_mask
+causal FA2,0.1782,192.80,inf,0.00,2,8,2048,256,causal_mask
+F.sdpa + mask,0.5449,67.00,inf,0.00,2,8,2048,256,causal_mask
+flexattention,0.2467,147.96,inf,0.00,2,8,2048,256,causal_mask
+causal FA2,0.5244,262.11,inf,0.00,2,8,4096,256,causal_mask
+F.sdpa + mask,2.1977,64.49,inf,0.00,2,8,4096,256,causal_mask
+flexattention,0.8069,175.64,inf,0.00,2,8,4096,256,causal_mask
+causal FA2,1.9297,284.90,inf,0.00,2,8,8192,256,causal_mask
+F.sdpa + mask,8.8897,62.81,inf,0.00,2,8,8192,256,causal_mask
+flexattention,2.8694,194.58,inf,0.00,2,8,8192,256,causal_mask
+causal FA2,7.2815,302.00,inf,0.00,2,8,16384,256,causal_mask
+F.sdpa + mask,37.8597,58.54,inf,0.00,2,8,16384,256,causal_mask
+flexattention,10.7166,206.80,inf,0.00,2,8,16384,256,causal_mask
+causal FA2,29.0469,302.82,inf,0.00,2,8,32768,256,causal_mask
+F.sdpa + mask,192.2494,45.93,inf,0.00,2,8,32768,256,causal_mask
+flexattention,41.4475,213.05,inf,0.00,2,8,32768,256,causal_mask
+causal FA2,0.0440,195.16,inf,0.00,2,32,1024,64,alibi_mod
+F.sdpa + mask,0.1904,90.24,inf,0.00,2,32,1024,64,alibi_mod
+flexattention,0.1080,159.10,inf,0.00,2,32,1024,64,alibi_mod
+causal FA2,0.1202,285.77,inf,0.00,2,32,2048,64,alibi_mod
+F.sdpa + mask,0.5946,115.58,inf,0.00,2,32,2048,64,alibi_mod
+flexattention,0.2092,328.48,inf,0.00,2,32,2048,64,alibi_mod
+causal FA2,0.3898,352.56,inf,0.00,2,32,4096,64,alibi_mod
+F.sdpa + mask,2.1240,129.42,inf,0.00,2,32,4096,64,alibi_mod
+flexattention,0.7446,369.15,inf,0.00,2,32,4096,64,alibi_mod
+causal FA2,1.4330,383.64,inf,0.00,2,32,8192,64,alibi_mod
+F.sdpa + mask,8.0905,135.90,inf,0.00,2,32,8192,64,alibi_mod
+flexattention,2.8269,388.95,inf,0.00,2,32,8192,64,alibi_mod
+causal FA2,5.3666,409.76,inf,0.00,2,32,16384,64,alibi_mod
+F.sdpa + mask,31.3303,140.38,inf,0.00,2,32,16384,64,alibi_mod
+flexattention,11.0628,397.55,inf,0.00,2,32,16384,64,alibi_mod
+causal FA2,21.1840,415.22,inf,0.00,2,32,32768,64,alibi_mod
+F.sdpa + mask,123.1312,142.87,inf,0.00,2,32,32768,64,alibi_mod
+flexattention,43.6961,402.60,inf,0.00,2,32,32768,64,alibi_mod
+causal FA2,0.0391,219.55,inf,0.00,2,16,1024,128,alibi_mod
+F.sdpa + mask,0.1291,133.10,inf,0.00,2,16,1024,128,alibi_mod
+flexattention,0.1074,159.93,inf,0.00,2,16,1024,128,alibi_mod
+causal FA2,0.0966,355.83,inf,0.00,2,16,2048,128,alibi_mod
+F.sdpa + mask,0.3511,195.72,inf,0.00,2,16,2048,128,alibi_mod
+flexattention,0.1885,364.53,inf,0.00,2,16,2048,128,alibi_mod
+causal FA2,0.2955,465.07,inf,0.00,2,16,4096,128,alibi_mod
+F.sdpa + mask,1.2156,226.12,inf,0.00,2,16,4096,128,alibi_mod
+flexattention,0.6456,425.78,inf,0.00,2,16,4096,128,alibi_mod
+causal FA2,1.0713,513.16,inf,0.00,2,16,8192,128,alibi_mod
+F.sdpa + mask,4.6342,237.26,inf,0.00,2,16,8192,128,alibi_mod
+flexattention,2.4117,455.90,inf,0.00,2,16,8192,128,alibi_mod
+causal FA2,4.1476,530.19,inf,0.00,2,16,16384,128,alibi_mod
+F.sdpa + mask,17.9576,244.91,inf,0.00,2,16,16384,128,alibi_mod
+flexattention,9.4484,465.48,inf,0.00,2,16,16384,128,alibi_mod
+causal FA2,15.7503,558.47,inf,0.00,2,16,32768,128,alibi_mod
+F.sdpa + mask,78.3377,224.57,inf,0.00,2,16,32768,128,alibi_mod
+flexattention,36.9440,476.19,inf,0.00,2,16,32768,128,alibi_mod
+causal FA2,0.0664,129.45,inf,0.00,2,8,1024,256,alibi_mod
+F.sdpa + mask,0.1564,109.83,inf,0.00,2,8,1024,256,alibi_mod
+flexattention,0.1099,156.39,inf,0.00,2,8,1024,256,alibi_mod
+causal FA2,0.1780,193.02,inf,0.00,2,8,2048,256,alibi_mod
+F.sdpa + mask,0.5473,125.56,inf,0.00,2,8,2048,256,alibi_mod
+flexattention,0.3461,198.53,inf,0.00,2,8,2048,256,alibi_mod
+causal FA2,0.5279,260.37,inf,0.00,2,8,4096,256,alibi_mod
+F.sdpa + mask,2.2255,123.51,inf,0.00,2,8,4096,256,alibi_mod
+flexattention,1.2855,213.83,inf,0.00,2,8,4096,256,alibi_mod
+causal FA2,1.9141,287.21,inf,0.00,2,8,8192,256,alibi_mod
+F.sdpa + mask,8.9942,122.25,inf,0.00,2,8,8192,256,alibi_mod
+flexattention,4.9918,220.26,inf,0.00,2,8,8192,256,alibi_mod
+causal FA2,7.4092,296.80,inf,0.00,2,8,16384,256,alibi_mod
+F.sdpa + mask,38.3623,114.65,inf,0.00,2,8,16384,256,alibi_mod
+flexattention,19.5881,224.53,inf,0.00,2,8,16384,256,alibi_mod
+causal FA2,28.8364,305.03,inf,0.00,2,8,32768,256,alibi_mod
+F.sdpa + mask,192.5890,91.35,inf,0.00,2,8,32768,256,alibi_mod
+flexattention,76.6550,229.50,inf,0.00,2,8,32768,256,alibi_mod
+causal FA2,0.0448,191.57,inf,0.00,2,32,1024,64,sliding_window_1024
+F.sdpa + mask,0.1901,50.83,inf,0.00,2,32,1024,64,sliding_window_1024
+flexattention,0.0588,164.26,inf,0.00,2,32,1024,64,sliding_window_1024
+causal FA2,0.1207,284.63,inf,0.00,2,32,2048,64,sliding_window_1024
+F.sdpa + mask,0.5866,49.42,inf,0.00,2,32,2048,64,sliding_window_1024
+flexattention,0.1200,241.58,inf,0.00,2,32,2048,64,sliding_window_1024
+causal FA2,0.3900,352.45,inf,0.00,2,32,4096,64,sliding_window_1024
+F.sdpa + mask,2.1272,31.80,inf,0.00,2,32,4096,64,sliding_window_1024
+flexattention,0.2422,279.30,inf,0.00,2,32,4096,64,sliding_window_1024
+causal FA2,1.4224,386.49,inf,0.00,2,32,8192,64,sliding_window_1024
+F.sdpa + mask,8.1988,17.68,inf,0.00,2,32,8192,64,sliding_window_1024
+flexattention,0.4869,297.69,inf,0.00,2,32,8192,64,sliding_window_1024
+causal FA2,5.5998,392.69,inf,0.00,2,32,16384,64,sliding_window_1024
+F.sdpa + mask,31.3671,9.55,inf,0.00,2,32,16384,64,sliding_window_1024
+flexattention,0.9755,307.10,inf,0.00,2,32,16384,64,sliding_window_1024
+causal FA2,21.1125,416.63,inf,0.00,2,32,32768,64,sliding_window_1024
+F.sdpa + mask,123.0817,4.95,inf,0.00,2,32,32768,64,sliding_window_1024
+flexattention,1.9592,310.75,inf,0.00,2,32,32768,64,sliding_window_1024
+causal FA2,0.0387,221.68,inf,0.00,2,16,1024,128,sliding_window_1024
+F.sdpa + mask,0.1282,75.35,inf,0.00,2,16,1024,128,sliding_window_1024
+flexattention,0.0543,177.81,inf,0.00,2,16,1024,128,sliding_window_1024
+causal FA2,0.0962,357.34,inf,0.00,2,16,2048,128,sliding_window_1024
+F.sdpa + mask,0.3529,82.16,inf,0.00,2,16,2048,128,sliding_window_1024
+flexattention,0.1025,282.73,inf,0.00,2,16,2048,128,sliding_window_1024
+causal FA2,0.2922,470.33,inf,0.00,2,16,4096,128,sliding_window_1024
+F.sdpa + mask,1.2128,55.78,inf,0.00,2,16,4096,128,sliding_window_1024
+flexattention,0.2021,334.66,inf,0.00,2,16,4096,128,sliding_window_1024
+causal FA2,1.0881,505.24,inf,0.00,2,16,8192,128,sliding_window_1024
+F.sdpa + mask,4.6197,31.38,inf,0.00,2,16,8192,128,sliding_window_1024
+flexattention,0.3970,365.14,inf,0.00,2,16,8192,128,sliding_window_1024
+causal FA2,4.1463,530.36,inf,0.00,2,16,16384,128,sliding_window_1024
+F.sdpa + mask,17.8379,16.79,inf,0.00,2,16,16384,128,sliding_window_1024
+flexattention,0.7966,376.05,inf,0.00,2,16,16384,128,sliding_window_1024
+causal FA2,15.8702,554.25,inf,0.00,2,16,32768,128,sliding_window_1024
+F.sdpa + mask,76.0239,8.01,inf,0.00,2,16,32768,128,sliding_window_1024
+flexattention,1.6259,374.44,inf,0.00,2,16,32768,128,sliding_window_1024
+causal FA2,0.0664,129.32,inf,0.00,2,8,1024,256,sliding_window_1024
+F.sdpa + mask,0.1529,63.19,inf,0.00,2,8,1024,256,sliding_window_1024
+flexattention,0.0915,105.63,inf,0.00,2,8,1024,256,sliding_window_1024
+causal FA2,0.1772,193.86,inf,0.00,2,8,2048,256,sliding_window_1024
+F.sdpa + mask,0.5465,53.05,inf,0.00,2,8,2048,256,sliding_window_1024
+flexattention,0.1872,154.84,inf,0.00,2,8,2048,256,sliding_window_1024
+causal FA2,0.5283,260.13,inf,0.00,2,8,4096,256,sliding_window_1024
+F.sdpa + mask,2.1392,31.62,inf,0.00,2,8,4096,256,sliding_window_1024
+flexattention,0.3820,177.07,inf,0.00,2,8,4096,256,sliding_window_1024
+causal FA2,1.9012,289.16,inf,0.00,2,8,8192,256,sliding_window_1024
+F.sdpa + mask,8.6897,16.68,inf,0.00,2,8,8192,256,sliding_window_1024
+flexattention,0.7695,188.37,inf,0.00,2,8,8192,256,sliding_window_1024
+causal FA2,7.4287,296.02,inf,0.00,2,8,16384,256,sliding_window_1024
+F.sdpa + mask,37.6601,7.95,inf,0.00,2,8,16384,256,sliding_window_1024
+flexattention,1.5609,191.92,inf,0.00,2,8,16384,256,sliding_window_1024
+causal FA2,29.5091,298.08,inf,0.00,2,8,32768,256,sliding_window_1024
+F.sdpa + mask,188.2588,3.23,inf,0.00,2,8,32768,256,sliding_window_1024
+flexattention,3.1331,194.31,inf,0.00,2,8,32768,256,sliding_window_1024
+causal FA2,0.0438,196.19,inf,0.00,2,32,1024,64,prefix_lm_causal_mask_1024
+F.sdpa + mask,0.1925,89.25,inf,0.00,2,32,1024,64,prefix_lm_causal_mask_1024
+flexattention,0.0644,266.79,inf,0.00,2,32,1024,64,prefix_lm_causal_mask_1024
+causal FA2,0.1205,285.04,inf,0.00,2,32,2048,64,prefix_lm_causal_mask_1024
+F.sdpa + mask,0.5985,73.56,inf,0.00,2,32,2048,64,prefix_lm_causal_mask_1024
+flexattention,0.1662,264.91,inf,0.00,2,32,2048,64,prefix_lm_causal_mask_1024
+causal FA2,0.3913,351.24,inf,0.00,2,32,4096,64,prefix_lm_causal_mask_1024
+F.sdpa + mask,2.1164,70.52,inf,0.00,2,32,4096,64,prefix_lm_causal_mask_1024
+flexattention,0.4878,305.99,inf,0.00,2,32,4096,64,prefix_lm_causal_mask_1024
+causal FA2,1.4310,384.18,inf,0.00,2,32,8192,64,prefix_lm_causal_mask_1024
+F.sdpa + mask,8.1706,69.26,inf,0.00,2,32,8192,64,prefix_lm_causal_mask_1024
+flexattention,1.6679,339.27,inf,0.00,2,32,8192,64,prefix_lm_causal_mask_1024
+causal FA2,5.4927,400.35,inf,0.00,2,32,16384,64,prefix_lm_causal_mask_1024
+F.sdpa + mask,31.1805,71.32,inf,0.00,2,32,16384,64,prefix_lm_causal_mask_1024
+flexattention,6.2268,357.12,inf,0.00,2,32,16384,64,prefix_lm_causal_mask_1024
+causal FA2,20.7820,423.25,inf,0.00,2,32,32768,64,prefix_lm_causal_mask_1024
+F.sdpa + mask,123.8109,71.38,inf,0.00,2,32,32768,64,prefix_lm_causal_mask_1024
+flexattention,23.9505,369.01,inf,0.00,2,32,32768,64,prefix_lm_causal_mask_1024
+causal FA2,0.0391,219.56,inf,0.00,2,16,1024,128,prefix_lm_causal_mask_1024
+F.sdpa + mask,0.1286,133.59,inf,0.00,2,16,1024,128,prefix_lm_causal_mask_1024
+flexattention,0.0553,310.49,inf,0.00,2,16,1024,128,prefix_lm_causal_mask_1024
+causal FA2,0.0967,355.15,inf,0.00,2,16,2048,128,prefix_lm_causal_mask_1024
+F.sdpa + mask,0.3530,124.70,inf,0.00,2,16,2048,128,prefix_lm_causal_mask_1024
+flexattention,0.1383,318.36,inf,0.00,2,16,2048,128,prefix_lm_causal_mask_1024
+causal FA2,0.2914,471.65,inf,0.00,2,16,4096,128,prefix_lm_causal_mask_1024
+F.sdpa + mask,1.2171,122.63,inf,0.00,2,16,4096,128,prefix_lm_causal_mask_1024
+flexattention,0.3865,386.14,inf,0.00,2,16,4096,128,prefix_lm_causal_mask_1024
+causal FA2,1.0979,500.73,inf,0.00,2,16,8192,128,prefix_lm_causal_mask_1024
+F.sdpa + mask,4.6864,120.75,inf,0.00,2,16,8192,128,prefix_lm_causal_mask_1024
+flexattention,1.3481,419.75,inf,0.00,2,16,8192,128,prefix_lm_causal_mask_1024
+causal FA2,4.1969,523.97,inf,0.00,2,16,16384,128,prefix_lm_causal_mask_1024
+F.sdpa + mask,17.8335,124.69,inf,0.00,2,16,16384,128,prefix_lm_causal_mask_1024
+flexattention,4.9011,453.72,inf,0.00,2,16,16384,128,prefix_lm_causal_mask_1024
+causal FA2,16.6718,527.60,inf,0.00,2,16,32768,128,prefix_lm_causal_mask_1024
+F.sdpa + mask,78.2403,112.96,inf,0.00,2,16,32768,128,prefix_lm_causal_mask_1024
+flexattention,19.0223,464.61,inf,0.00,2,16,32768,128,prefix_lm_causal_mask_1024
+causal FA2,0.0676,127.15,inf,0.00,2,8,1024,256,prefix_lm_causal_mask_1024
+F.sdpa + mask,0.1495,114.88,inf,0.00,2,8,1024,256,prefix_lm_causal_mask_1024
+flexattention,0.0996,172.54,inf,0.00,2,8,1024,256,prefix_lm_causal_mask_1024
+causal FA2,0.1789,192.05,inf,0.00,2,8,2048,256,prefix_lm_causal_mask_1024
+F.sdpa + mask,0.5473,80.44,inf,0.00,2,8,2048,256,prefix_lm_causal_mask_1024
+flexattention,0.2815,156.40,inf,0.00,2,8,2048,256,prefix_lm_causal_mask_1024
+causal FA2,0.5331,257.82,inf,0.00,2,8,4096,256,prefix_lm_causal_mask_1024
+F.sdpa + mask,2.1968,67.94,inf,0.00,2,8,4096,256,prefix_lm_causal_mask_1024
+flexattention,0.8390,177.88,inf,0.00,2,8,4096,256,prefix_lm_causal_mask_1024
+causal FA2,1.9149,287.10,inf,0.00,2,8,8192,256,prefix_lm_causal_mask_1024
+F.sdpa + mask,8.8670,63.82,inf,0.00,2,8,8192,256,prefix_lm_causal_mask_1024
+flexattention,2.8920,195.66,inf,0.00,2,8,8192,256,prefix_lm_causal_mask_1024
+causal FA2,7.4108,296.73,inf,0.00,2,8,16384,256,prefix_lm_causal_mask_1024
+F.sdpa + mask,37.7363,58.93,inf,0.00,2,8,16384,256,prefix_lm_causal_mask_1024
+flexattention,10.7144,207.54,inf,0.00,2,8,16384,256,prefix_lm_causal_mask_1024
+causal FA2,29.2041,301.19,inf,0.00,2,8,32768,256,prefix_lm_causal_mask_1024
+F.sdpa + mask,190.1568,46.48,inf,0.00,2,8,32768,256,prefix_lm_causal_mask_1024
+flexattention,41.4249,213.35,inf,0.00,2,8,32768,256,prefix_lm_causal_mask_1024
+causal FA2,0.0442,194.23,inf,0.00,2,32,1024,64,tanh_softcap_30
+F.sdpa + mask,0.1919,89.54,inf,0.00,2,32,1024,64,tanh_softcap_30
+flexattention,0.1607,106.94,inf,0.00,2,32,1024,64,tanh_softcap_30
+causal FA2,0.1190,288.77,inf,0.00,2,32,2048,64,tanh_softcap_30
+F.sdpa + mask,0.5961,115.29,inf,0.00,2,32,2048,64,tanh_softcap_30
+flexattention,0.5615,122.39,inf,0.00,2,32,2048,64,tanh_softcap_30
+causal FA2,0.3926,350.03,inf,0.00,2,32,4096,64,tanh_softcap_30
+F.sdpa + mask,2.1232,129.47,inf,0.00,2,32,4096,64,tanh_softcap_30
+flexattention,2.1399,128.46,inf,0.00,2,32,4096,64,tanh_softcap_30
+causal FA2,1.4188,387.48,inf,0.00,2,32,8192,64,tanh_softcap_30
+F.sdpa + mask,8.1847,134.34,inf,0.00,2,32,8192,64,tanh_softcap_30
+flexattention,8.3650,131.44,inf,0.00,2,32,8192,64,tanh_softcap_30
+causal FA2,5.4174,405.92,inf,0.00,2,32,16384,64,tanh_softcap_30
+F.sdpa + mask,31.4017,140.06,inf,0.00,2,32,16384,64,tanh_softcap_30
+flexattention,32.5784,135.00,inf,0.00,2,32,16384,64,tanh_softcap_30
+causal FA2,21.2414,414.10,inf,0.00,2,32,32768,64,tanh_softcap_30
+F.sdpa + mask,123.8940,141.99,inf,0.00,2,32,32768,64,tanh_softcap_30
+flexattention,128.9210,136.46,inf,0.00,2,32,32768,64,tanh_softcap_30
+causal FA2,0.0386,222.59,inf,0.00,2,16,1024,128,tanh_softcap_30
+F.sdpa + mask,0.1280,134.21,inf,0.00,2,16,1024,128,tanh_softcap_30
+flexattention,0.1129,152.18,inf,0.00,2,16,1024,128,tanh_softcap_30
+causal FA2,0.0956,359.34,inf,0.00,2,16,2048,128,tanh_softcap_30
+F.sdpa + mask,0.3532,194.54,inf,0.00,2,16,2048,128,tanh_softcap_30
+flexattention,0.3708,185.32,inf,0.00,2,16,2048,128,tanh_softcap_30
+causal FA2,0.2987,460.09,inf,0.00,2,16,4096,128,tanh_softcap_30
+F.sdpa + mask,1.2068,227.78,inf,0.00,2,16,4096,128,tanh_softcap_30
+flexattention,1.3950,197.04,inf,0.00,2,16,4096,128,tanh_softcap_30
+causal FA2,1.0799,509.09,inf,0.00,2,16,8192,128,tanh_softcap_30
+F.sdpa + mask,4.6493,236.49,inf,0.00,2,16,8192,128,tanh_softcap_30
+flexattention,5.4576,201.46,inf,0.00,2,16,8192,128,tanh_softcap_30
+causal FA2,4.1726,527.01,inf,0.00,2,16,16384,128,tanh_softcap_30
+F.sdpa + mask,17.8817,245.95,inf,0.00,2,16,16384,128,tanh_softcap_30
+flexattention,21.3249,206.24,inf,0.00,2,16,16384,128,tanh_softcap_30
+causal FA2,15.6395,562.43,inf,0.00,2,16,32768,128,tanh_softcap_30
+F.sdpa + mask,73.4438,239.53,inf,0.00,2,16,32768,128,tanh_softcap_30
+flexattention,83.3009,211.19,inf,0.00,2,16,32768,128,tanh_softcap_30
+causal FA2,0.0662,129.77,inf,0.00,2,8,1024,256,tanh_softcap_30
+F.sdpa + mask,0.1533,112.07,inf,0.00,2,8,1024,256,tanh_softcap_30
+flexattention,0.1551,110.74,inf,0.00,2,8,1024,256,tanh_softcap_30
+causal FA2,0.1771,194.03,inf,0.00,2,8,2048,256,tanh_softcap_30
+F.sdpa + mask,0.5476,125.49,inf,0.00,2,8,2048,256,tanh_softcap_30
+flexattention,0.5245,131.03,inf,0.00,2,8,2048,256,tanh_softcap_30
+causal FA2,0.5349,256.92,inf,0.00,2,8,4096,256,tanh_softcap_30
+F.sdpa + mask,2.2284,123.35,inf,0.00,2,8,4096,256,tanh_softcap_30
+flexattention,1.9870,138.34,inf,0.00,2,8,4096,256,tanh_softcap_30
+causal FA2,1.9080,288.13,inf,0.00,2,8,8192,256,tanh_softcap_30
+F.sdpa + mask,8.9375,123.02,inf,0.00,2,8,8192,256,tanh_softcap_30
+flexattention,7.7550,141.78,inf,0.00,2,8,8192,256,tanh_softcap_30
+causal FA2,7.5990,289.38,inf,0.00,2,8,16384,256,tanh_softcap_30
+F.sdpa + mask,38.5258,114.16,inf,0.00,2,8,16384,256,tanh_softcap_30
+flexattention,30.4735,144.32,inf,0.00,2,8,16384,256,tanh_softcap_30
+causal FA2,29.0121,303.19,inf,0.00,2,8,32768,256,tanh_softcap_30
+F.sdpa + mask,189.6670,92.75,inf,0.00,2,8,32768,256,tanh_softcap_30
+flexattention,119.5057,147.21,inf,0.00,2,8,32768,256,tanh_softcap_30
+causal FA2,0.0437,196.47,inf,0.00,2,32,1024,64,tanh_softcap_approx_30
+F.sdpa + mask,0.1873,91.72,inf,0.00,2,32,1024,64,tanh_softcap_approx_30
+flexattention,0.1093,157.15,inf,0.00,2,32,1024,64,tanh_softcap_approx_30
+causal FA2,0.1206,284.82,inf,0.00,2,32,2048,64,tanh_softcap_approx_30
+F.sdpa + mask,0.5960,115.31,inf,0.00,2,32,2048,64,tanh_softcap_approx_30
+flexattention,0.2487,276.32,inf,0.00,2,32,2048,64,tanh_softcap_approx_30
+causal FA2,0.3901,352.29,inf,0.00,2,32,4096,64,tanh_softcap_approx_30
+F.sdpa + mask,2.1086,130.36,inf,0.00,2,32,4096,64,tanh_softcap_approx_30
+flexattention,0.9058,303.46,inf,0.00,2,32,4096,64,tanh_softcap_approx_30
+causal FA2,1.4309,384.19,inf,0.00,2,32,8192,64,tanh_softcap_approx_30
+F.sdpa + mask,8.1933,134.20,inf,0.00,2,32,8192,64,tanh_softcap_approx_30
+flexattention,3.4486,318.83,inf,0.00,2,32,8192,64,tanh_softcap_approx_30
+causal FA2,5.4170,405.95,inf,0.00,2,32,16384,64,tanh_softcap_approx_30
+F.sdpa + mask,31.2073,140.93,inf,0.00,2,32,16384,64,tanh_softcap_approx_30
+flexattention,13.4188,327.75,inf,0.00,2,32,16384,64,tanh_softcap_approx_30
+causal FA2,21.1027,416.82,inf,0.00,2,32,32768,64,tanh_softcap_approx_30
+F.sdpa + mask,123.8421,142.05,inf,0.00,2,32,32768,64,tanh_softcap_approx_30
+flexattention,52.8926,332.60,inf,0.00,2,32,32768,64,tanh_softcap_approx_30
+causal FA2,0.0391,219.74,inf,0.00,2,16,1024,128,tanh_softcap_approx_30
+F.sdpa + mask,0.1280,134.21,inf,0.00,2,16,1024,128,tanh_softcap_approx_30
+flexattention,0.1062,161.74,inf,0.00,2,16,1024,128,tanh_softcap_approx_30
+causal FA2,0.0962,357.00,inf,0.00,2,16,2048,128,tanh_softcap_approx_30
+F.sdpa + mask,0.3546,193.81,inf,0.00,2,16,2048,128,tanh_softcap_approx_30
+flexattention,0.2036,337.58,inf,0.00,2,16,2048,128,tanh_softcap_approx_30
+causal FA2,0.2930,469.05,inf,0.00,2,16,4096,128,tanh_softcap_approx_30
+F.sdpa + mask,1.2139,226.44,inf,0.00,2,16,4096,128,tanh_softcap_approx_30
+flexattention,0.7202,381.69,inf,0.00,2,16,4096,128,tanh_softcap_approx_30
+causal FA2,1.0957,501.73,inf,0.00,2,16,8192,128,tanh_softcap_approx_30
+F.sdpa + mask,4.6128,238.36,inf,0.00,2,16,8192,128,tanh_softcap_approx_30
+flexattention,2.6924,408.37,inf,0.00,2,16,8192,128,tanh_softcap_approx_30
+causal FA2,4.0907,537.56,inf,0.00,2,16,16384,128,tanh_softcap_approx_30
+F.sdpa + mask,17.8797,245.98,inf,0.00,2,16,16384,128,tanh_softcap_approx_30
+flexattention,10.7252,410.07,inf,0.00,2,16,16384,128,tanh_softcap_approx_30
+causal FA2,16.2455,541.45,inf,0.00,2,16,32768,128,tanh_softcap_approx_30
+F.sdpa + mask,78.9943,222.70,inf,0.00,2,16,32768,128,tanh_softcap_approx_30
+flexattention,41.9566,419.30,inf,0.00,2,16,32768,128,tanh_softcap_approx_30
+causal FA2,0.0666,129.04,inf,0.00,2,8,1024,256,tanh_softcap_approx_30
+F.sdpa + mask,0.1527,112.53,inf,0.00,2,8,1024,256,tanh_softcap_approx_30
+flexattention,0.1095,156.91,inf,0.00,2,8,1024,256,tanh_softcap_approx_30
+causal FA2,0.1779,193.18,inf,0.00,2,8,2048,256,tanh_softcap_approx_30
+F.sdpa + mask,0.5468,125.67,inf,0.00,2,8,2048,256,tanh_softcap_approx_30
+flexattention,0.3581,191.89,inf,0.00,2,8,2048,256,tanh_softcap_approx_30
+causal FA2,0.5250,261.80,inf,0.00,2,8,4096,256,tanh_softcap_approx_30
+F.sdpa + mask,2.2356,122.95,inf,0.00,2,8,4096,256,tanh_softcap_approx_30
+flexattention,1.3410,204.99,inf,0.00,2,8,4096,256,tanh_softcap_approx_30
+causal FA2,1.9217,286.08,inf,0.00,2,8,8192,256,tanh_softcap_approx_30
+F.sdpa + mask,9.0629,121.32,inf,0.00,2,8,8192,256,tanh_softcap_approx_30
+flexattention,5.2205,210.61,inf,0.00,2,8,8192,256,tanh_softcap_approx_30
+causal FA2,7.3350,299.80,inf,0.00,2,8,16384,256,tanh_softcap_approx_30
+F.sdpa + mask,38.5674,114.04,inf,0.00,2,8,16384,256,tanh_softcap_approx_30
+flexattention,20.5196,214.33,inf,0.00,2,8,16384,256,tanh_softcap_approx_30
+causal FA2,29.5445,297.72,inf,0.00,2,8,32768,256,tanh_softcap_approx_30
+F.sdpa + mask,191.0669,92.07,inf,0.00,2,8,32768,256,tanh_softcap_approx_30
+flexattention,80.2891,219.11,inf,0.00,2,8,32768,256,tanh_softcap_approx_30

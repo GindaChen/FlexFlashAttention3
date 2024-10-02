@@ -1,4 +1,18 @@
+
+
 Support FlexAttention in FlashAttention3
+
+
+## Build environment
+
+These instructions currently only tested in CUDA 12.4. We eventually need CUDA 12.3 for the build, and this is still under dev.
+
+
+Install mamba
+```bash
+# https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html
+"${SHELL}" <(curl -L micro.mamba.pm/install.sh)
+```
 
 Build environment to benchmark FlashAttention3 with nightly torch
 ```bash
