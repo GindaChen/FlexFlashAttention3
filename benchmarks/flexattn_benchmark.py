@@ -503,11 +503,31 @@ def main(
     else:
         ex_to_run = examples
 
+    all_results = []
     for ex in ex_to_run:
         if ex in available_examples:
-            available_examples[ex]()
+            result = available_examples[ex]()
+            all_results.extend(result)
         else:
             print(f"Warning: Unknown example key '{ex}'. Skipping.")
+    
+    headers=[
+        "Operation",
+        "FW Time (ms)",
+        "FW FLOPS (TF/s)",
+        "BW Time (ms)",
+        "BW FLOPS (TF/s)",
+        "B",
+        "H",
+        "S",
+        "D",
+        "Name",
+    ]
+    with open("flexattn_benchmark.csv", "w+") as f:
+        import csv
+        writer = csv.writer(f)
+        writer.writerow(headers)
+        writer.writerows(all_results)
 
 
 
