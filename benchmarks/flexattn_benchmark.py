@@ -487,13 +487,15 @@ def main(
         "alibi": lambda: test_mask(score_mod=generate_alibi_bias(16), **kwargs),
         "sliding_window": lambda: test_mask(mask_mod=generate_sliding_window(window_size=1024), **kwargs),
         "prefix_lm": lambda: test_mask(mask_mod=generate_prefix_lm_mask(prefix_length=1024), **kwargs),
-        "document": lambda: run_document_masking(max_seq_len=32768, num_docs=12, **kwargs),
         "softcap": lambda: test_mask(
             score_mod=generate_tanh_softcap(30, approx=False), **kwargs
         ),
         "softcap_approx": lambda: test_mask(
             score_mod=generate_tanh_softcap(30, approx=True), **kwargs
         ),
+
+        # TODO: Need to change interface
+        # "document": lambda: run_document_masking(max_seq_len=32768, num_docs=12, **kwargs),
     }
 
     if "all" in examples:
